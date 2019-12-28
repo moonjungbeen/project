@@ -10,15 +10,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<header>
+	<div class="header">
 		<jsp:include page="/include/header.jsp"></jsp:include>
-	</header>
+	</div>
 	<div class="wrap">
-	
+		<h1 style="background-color: skyblue;">BODY</h1>
 	
 	</div>
-	<footer>
+	<div>
 		<jsp:include page="/include/footer.jsp"></jsp:include>
-	</footer>
+	</div>
 </body>
 </html>
