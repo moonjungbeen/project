@@ -40,19 +40,14 @@ a{
     width: 100%;
     background: #fff;
     z-index: 10;
-/*     border: solid blue; */
+    border: solid blue;
     display: block;
 }
-.header:hover{
-	 box-shadow: 0  3px #E9E9E9;
-	 transition: all 0.8s;
-	 display:inline-block;
-	 height: 350px;
-	 position:absolute;
-}
+
 
 .header_top {
 /*     border-bottom: 1px solid; */
+	border : solid;
     height: 34px;
 }
 .inner{
@@ -62,7 +57,7 @@ a{
 }
 .sitelink{
     float:left;
-/*     border:solid orange; */
+    border:solid orange;
 }
 .sitelink ul{
     float:left;
@@ -75,7 +70,7 @@ a{
 }
 
 .sitejoin{
-/*     border:solid purple; */
+    border:solid purple;
     float:right;
 }
 .sitejoin ul{
@@ -89,12 +84,34 @@ a{
 
 
 .header_bottom{
-	position: relative;
+/* 	position: relative; */
 /* 	border: solid yellow; */
-    height: auto;
-    display : flex;
-    justify-content: center;
-    align-content: center;      
+/*     height: auto; */
+/*     display : flex; */
+    margin: 0 auto;    
+	height: 100px;
+	border: solid;
+	width: 1140px;
+}
+.header_bottom:hover{
+	 box-shadow: 0  3px #E9E9E9;
+	 transition: all 0.8s;
+	 margin:0 auto;
+	 height: 350px;
+	 position:relative;
+}
+
+.header_bottom:hover .submenu{
+	visibility:visible;
+	transition: all 0.5s;
+	transform:translate(0,-10px);
+}
+
+.header_bottom:hover .navbar{
+	height:345px;
+	display:inline-block;
+	position: relative;
+	transition: all 1s;
 }
 
 .logo{
@@ -103,39 +120,17 @@ a{
     font-weight: 700;
     color: #000;
     float:left;
-/*     border: solid red; */
+    border: solid red;
    
 }
 
 .navbar {
     float:left;
-/*     border : solid skyblue; */
-    height:100px;  
-}
-.navbar>ul{
-    float:left;
-/*     border : solid red; */
-    margin-top: 35px;
-    margin-left: 30px;
-}
-.navbar ul>li>a{
- 
-}
-
-.navbar>ul>li{
-    list-style: none;
-/*     border : solid skyblue; */
-    
-}
-
-.submenu{
-/*     border : solid green; */
-    margin-top: 40px;
-	visibility: hidden;
-}
-.submenu>li{
-	margin-bottom: 20px;
-/* 	border : solid red; */
+    border : solid skyblue;
+    height:100px;
+    width : 850px;
+    display: inherit;
+    overflow: hidden;
 }
 
 .navbar:hover .submenu{
@@ -143,11 +138,46 @@ a{
 	transition: all 0.5s;
 	transform:translate(0,-10px);
 }
+.navbar:hover{
+	height:345px;
+	display:inline-block;
+	position: relative;
+	transition: all 1s;
+}
+
+.navbar>ul{
+    float:left;
+/*     border : solid red; */
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.navbar>ul>li{
+    list-style: none;
+    border : solid skyblue;
+    
+}
+
+.submenu{
+/*     border : solid green; */
+    margin-top: 40px;
+	visibility: hidden;
+	
+}
+.submenu>li{
+	margin-bottom: 20px;
+	border : solid red;
+	
+}
+
+
 
 .realtime{
+	border:solid red;
 	float:left;
 }
 .searchImg{
+	border:solid red;
 	float:left;
 }
 
