@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="path" value="${pageContext.request.contextPath}"></c:set>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +10,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	인덱스 페이지입니다 <a></a>
+	<header>
+		<jsp:include page="/include/header.jsp"></jsp:include>
+	</header>
+	<div class="wrap">
+	
+	
+	</div>
+	<footer>
+		<jsp:include page="/include/footer.jsp"></jsp:include>
+	</footer>
 </body>
 </html>
